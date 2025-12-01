@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="form">
+        <label for="name" class="form__label">Имя</label>
+        <input 
+            type="text" 
+            id="name" 
+            name="name"
+            class="form__input" 
+            placeholder="Введите ваше имя"
+            required
+            minlength="4"
+            maxlength="25"/>
+        <span class="form__des">Минимум 4 символа</span>
+        <label for="name" class="form__label">Почта</label>
+        <input 
+            type="email" 
+            name="email"
+            id="email" 
+            class="form__input"
+            placeholder="Ввелите вашу почту"
+            required>
+        <span class="form__des">Введите действительную почту</span>
+        <label for="number" class="form__label">Номер телефона</label>
+        <input 
+            type="tel" 
+            id="number" 
+            name="number"
+            class="form__input" 
+            placeholder="Введите ваш номер"
+            required
+            minlength="10"
+            maxlength="10">
+        <span class="form__des">10 цифр, например, 1234567890</span>
+        <label for="select" class="form__label">Выберите курс</label>
+        <select 
+        required
+        name="select" 
+        id="select">
+        <option disabled selected value="">Выберите курс</option>
+        <option value="Первый курс">Первый курс</option>
+        <option value="Врторой курс">Втоорой курс</option>
+        <option value="Третий курс">Третий курс</option>
+        <option value="Четвертый курс">Четвертый курс</option></select>
+        <span class="form__des">Выберите подходящий курс</span>
+        <h5>Комментарий</h5>
+        <textarea name="Comment" id="Comment" placeholder="Расскажите о вашем опыте (в фотографии)"></textarea>
+        <span class="form__des">опционально, до 500 символов</span>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</body>
+</html>
+
+<!-- Что-то -->
