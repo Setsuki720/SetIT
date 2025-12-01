@@ -1,0 +1,22 @@
+ a:hover {
+    color: bisque;
+    text-decoration: none;
+}
+button {
+    padding: 12px;
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    transition: all .3s ease-in;
+}
+button:active {
+   background-color: blue;
+   scale: .95;
+
+} 
+a:link{
+    color: rgb(132, 0, 255);
+}
+a:visited{
+    color: orangered;
+}
