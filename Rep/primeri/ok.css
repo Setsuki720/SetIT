@@ -1,0 +1,55 @@
+body {
+    font-size: 30px;
+}
+.box1 {
+    box-sizing: border-box;
+    width: 20rem;
+    height: 10rem;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.box2 {
+    box-sizing: border-box;
+    width: 50vw;
+    height: 50vh;
+    padding: 20px;
+    border: 2px solid blue;
+    margin-top: 50px;
+}
+
+.box3 {
+    box-sizing: border-box;
+    width: 20em;
+    height: 10em;
+    padding: 20px;
+    border: 2px solid green;
+    margin-top: 50px;
+}
+
+.box4 {
+    box-sizing: border-box;
+    width: calc(100% - 20rem);
+    height: calc(100% - 40rem);
+    padding: 20px;
+    border: 2px solid purple;
+    margin-top: 50px;
+}
+
+.box5 {
+    box-sizing: border-box;
+    width: min(50vw, 500px);
+    height: max(50vh, 400px);
+    padding: 20px;
+    border: 2px solid yellow;
+    margin-top: 50px;
+}
+
+.box6 {
+    box-sizing: border-box;
+    width: clamp(7.5rem, -5.208rem + 48.67vw, 15.125vw);
+    height: 100px;
+    padding: 20px;
+    border: 2px solid orange;
+    margin-top: 50px;
+}
