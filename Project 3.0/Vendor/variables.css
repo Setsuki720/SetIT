@@ -1,0 +1,31 @@
+:root {
+    --main-bg-color: #ffffff;
+    --second-bg-color: #FFDA74;
+    --main-accent-color: #1664EA;
+    --main-add-color: rgb(24, 24, 24);
+    --main-black-color: rgb(25 25 25);
+    --main-text-color: #1B1B1B;
+    --bt-color: #ffffff;
+    --second-color: #ffffff;
+    --border-color: #E8E8E8;
+    --str-color: #1B1B1B;
+    --skills-color: #1B1B1B;
+    --black-blue: #1B1B1B;
+    --back-color: #FFDA74;
+}
+
+[data-theme="Dark"] {
+    --back-color: #1664EA;
+    --black-blue: #1664EA;
+    --skills-color: #303030;
+    --second-color: #1664EA;
+    --main-bg-color: #303030;
+    --second-bg-color: #252525;
+    --main-text-color: #ffffff;
+    --checkout: #1664EA;
+    --blabla: #303030;
+    --pb: #1664EA;
+    --top-color: #1664EA;
+    --border-color: none;
+    --str-color: #FFFFFF;
+}

@@ -1,0 +1,11 @@
+@import url(main_div_styles.css);
+@import url(../Vendor/normalize.css);
+@import url(../Vendor/variables.css);
+@import url(../Fonts/fonts.css);
+@import url(./header.css);
+@import url(John.css);
+@import url(../Blocks/Skills.css);
+@import url(./Portfolio.css);
+@import url(./Exp.css);
+@import url(./Contacts.css);
+@import url(./footer.css);

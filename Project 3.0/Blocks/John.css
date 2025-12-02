@@ -1,0 +1,90 @@
+.INFO {
+    background-color: var(--main-bg-color);
+    display: flex;
+    font-family: 'Inter-Regular';
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 382px;
+    margin-top: 172px;
+    justify-content: space-between;
+    align-content: center;
+    color: var(--main-text-color);
+}
+
+.john {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.op {
+    opacity: 25%;
+}
+
+.john h1 {
+    font-size: 40px;
+}
+
+.Check {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    align-items: center;
+}
+
+.Check img {
+    width: 20px;
+    height: 20px;
+}
+
+.Check a {
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    background-color: var(--second-color);
+}
+
+.svgs {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.da {
+    color: #1664EA;
+}
+
+.vb {
+    position: absolute;
+}
+
+ .cv {
+    position: relative;
+}
+
+.scroll {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 272px;
+    rotate: -90deg;
+    gap:20px;
+    right: 50px;
+    z-index: 3;
+}
+
+.down {
+    opacity: 25%;
+    color: var(--str-color);
+    font-family: "Inter-Regular";
+}
+
+.line {
+    opacity: 25%;
+    background-color: var(--str-color   );
+    width: 160px;
+    height: 1px;
+}

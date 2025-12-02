@@ -1,0 +1,40 @@
+.theme {
+    background-color: var(--main-bg-color);
+    border: none;
+    color: var(--main-text-color);
+}
+
+.navigation a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.navigation {
+    background-color: var(--main-bg-color);
+    font-family: 'Inter-Regular';
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 52px;
+    justify-content: space-between;
+    padding-top: 40px;
+    font-size: 20px;
+    align-items: center;
+    color: var(--main-text-color);
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.contact {
+    background-color: #1664EA;
+    width: 100px;
+    height: 52px;
+    border-radius: 5px;
+    border: none;
+    gap: 10px;
+    color:  #FFFFFF;
+    size: 20px;
+}

@@ -1,0 +1,14 @@
+.orange {
+    background-color: var(--second-bg-color);
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 90px;
+    height: max-content;
+    opacity: 1;
+    border-radius: 2px;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
