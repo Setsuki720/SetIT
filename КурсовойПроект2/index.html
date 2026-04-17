@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор случайных вызовов</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <div class="app">
+        <!-- Шапка -->
+        <header class="header">
+            <h1>🎯 Генератор случайных вызовов</h1>
+            <nav class="nav">
+                <button class="nav-link active" data-page="main">Главная</button>
+                <button class="nav-link" data-page="profile">Профиль</button>
+                <button class="nav-link" data-page="history">История</button>
+                <button class="nav-link" data-page="settings">Настройки</button>
+            </nav>
+        </header>
+
+        <!--ГЛАВНАЯ СТРАНИЦА-->
+        <div id="page-main" class="page active">
+            <!-- Блок приветствия -->
+            <div class="welcome">
+                <p id="greeting">Добро пожаловать!</p>
+                <button id="getQuestBtn" class="btn btn-primary">🎲 Получить квест</button>
+            </div>
+
+            <!-- Фильтры на главной: сложность и категории -->
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Сложность:</label>
+                    <select id="mainDifficulty">
+                        <option value="all">Все</option>
+                        <option value="easy">Лёгкий</option>
+                        <option value="medium">Средний</option>
+                        <option value="hard">Сложный</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Категории:</label>
+                    <div id="mainCategories" class="categories-check"></div>
+                </div>
+            </div>
+
+            <!-- Контейнер для квестов -->
+            <div id="questsList" class="quests-list">
+                <div class="empty-state">Нажмите "Получить квест"</div>
+            </div>
+        </div>
+
+        <!-- ПРОФИЛЬ -->
+        <div id="page-profile" class="page">
+            <div class="profile-card">
+                <div class="profile-field">
+                    <label>Имя:</label>
+                    <input type="text" id="userName" placeholder="Ваше имя" maxlength="25">
+                </div>
+                <div class="profile-field">
+                    <label>Дата регистрации:</label>
+                    <span id="regDate">—</span>
+                </div>
+                <div class="profile-field">
+                    <label>Уровень:</label>
+                    <span id="userLevel">Новичок</span>
+                </div>
+                <hr>
+                <div class="stats">
+                    <div class="stat">✅ Выполнено: <span id="completedPercent">0</span>%</div>
+                    <div class="stat">🔥 Серия: <span id="currentStreak">0</span> дней</div>
+                    <div class="stat">⭐ Наград: <span id="totalRewards">0</span></div>
+                </div>
+            </div>
+
+            <div class="rewards-section">
+                <h3>🏅 Мои достижения</h3>
+                <div id="rewardsContainer" class="rewards-list">
+                    <div class="empty-state">Нет наград</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========= ИСТОРИЯ ========= -->
+        <div id="page-history" class="page">
+            <div class="history-toolbar">
+                <select id="historyStatusFilter">
+                    <option value="all">Все статусы</option>
+                    <option value="pending">⏳ В ожидании (pending)</option>
+                    <option value="completed">✅ Выполненные</option>
+                    <option value="skipped">⏭ Пропущенные</option>
+                </select>
+                <button id="clearHistoryBtn" class="btn btn-small">Очистить историю</button>
+            </div>
+            <div class="table-container">
+                <table id="historyTable">
+                    <thead>
+                        <tr><th>Название</th><th>Сложность</th><th>Статус</th><th>Дата</th></tr>
+                    </thead>
+                    <tbody id="historyBody">
+                        <tr><td colspan="4">Нет записей</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ========= НАСТРОЙКИ ========= -->
+        <div id="page-settings" class="page">
+            <div class="settings-card">
+                <h3>⚙️ Общие настройки</h3>
+                <div class="setting-item">
+                    <label>Уровень сложности (по умолчанию):</label>
+                    <select id="settingsDifficulty">
+                        <option value="all">Все</option>
+                        <option value="easy">Лёгкий</option>
+                        <option value="medium">Средний</option>
+                        <option value="hard">Сложный</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label>Категории для фильтра:</label>
+                    <div id="settingsCategories" class="categories-check"></div>
+                </div>
+                <button id="resetAllBtn" class="btn btn-danger">⚠️ Сбросить весь прогресс</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
